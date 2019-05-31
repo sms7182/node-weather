@@ -1,6 +1,6 @@
 console.log('css file loaded');
 
-fetch('http://localhost:7575/weatherApp?address=!').then((response)=>{
+fetch('/weatherApp?address=!').then((response)=>{
     
     console.log(response);
    response.json().then((data)=>{
