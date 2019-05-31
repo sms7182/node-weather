@@ -27,7 +27,7 @@ weatherForm.addEventListener('submit',(e)=>{
    e.preventDefault();
 
    msg1.textContent='Loading ....';
-   fetch('http://localhost:7575/weatherApp?address='+search.value).then((response)=>{
+   fetch('/weatherApp?address='+search.value).then((response)=>{
     
     
    response.json().then((data)=>{
